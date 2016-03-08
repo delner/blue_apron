@@ -4,6 +4,9 @@ module BlueApron::Interfaces
     def moves
       @moves ||= []
     end
+    def moves=(m)
+      @moves = m.reverse
+    end
     def print_intro(info = {}); end
     def print_turn(info = {}); end
     def print_record(info = {}); end
