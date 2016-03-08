@@ -1,8 +1,11 @@
+# Dependencies
 require 'rubygems'
 require 'bundler/setup'
 require 'pry'
-
 require 'blue_apron'
+
+# Testing extensions
+require 'rspec/collection_matchers'
 
 RSpec.configure do |config|
   config.expect_with :rspec do |expectations|
