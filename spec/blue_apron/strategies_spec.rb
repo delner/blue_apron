@@ -10,7 +10,7 @@ describe BlueApron::Strategies do
 
     context "given a name and strategy" do
       let(:name) { "test" }
-      let(:strategy) { double('stategy') }
+      let(:strategy) { double('strategy') }
       it { expect(strategies_module.all).to include(name => strategy) }
     end
   end
