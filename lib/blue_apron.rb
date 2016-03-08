@@ -6,6 +6,10 @@ require "blue_apron/version"
 module BlueApron
 end
 
+require 'blue_apron/moves'
+require 'blue_apron/moves/rock'
+require 'blue_apron/moves/paper'
+require 'blue_apron/moves/scissors'
 require 'blue_apron/strategy'
 require 'blue_apron/strategies'
 require 'blue_apron/strategies/favorite_strategy'
