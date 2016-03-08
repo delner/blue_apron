@@ -7,6 +7,7 @@ describe BlueApron::Moves do
   describe "#add" do
     subject { super().add(name, move) }
     before(:each) { subject }
+    after(:each) { moves_module.all.delete(name) }
 
     context "given a name and move" do
       let(:name) { "test" }
@@ -28,6 +29,7 @@ describe BlueApron::Moves do
       let(:name) { "test" }
       let(:move) { double('move') }
       before(:each) { moves_module.add(name, move) }
+      after(:each) { moves_module.all.delete(name) }
       it { expect(subject).to eq(move) }
     end
   end
