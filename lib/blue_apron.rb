@@ -21,6 +21,7 @@ require 'blue_apron/strategies/favorite_strategy'
 require 'blue_apron/strategies/last_strategy'
 
 require 'blue_apron/interface'
+require 'blue_apron/interfaces/automatic'
 require 'blue_apron/interfaces/terminal'
 
 require 'blue_apron/game'
