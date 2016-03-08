@@ -1,0 +1,2 @@
+class BlueApron::Game
+end

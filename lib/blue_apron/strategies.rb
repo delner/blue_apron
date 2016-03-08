@@ -1,0 +1,2 @@
+class BlueApron::Strategies
+end
