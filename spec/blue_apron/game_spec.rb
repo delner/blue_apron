@@ -1,5 +1,8 @@
 require 'spec_helper'
 
 describe BlueApron::Game do
-  it { expect(BlueApron::Game).to_not be_nil }
+  subject { BlueApron::Game.new }
+  describe "#play" do
+    it { expect(subject).to respond_to(:play) }
+  end
 end
