@@ -42,7 +42,7 @@ class BlueApron::Game
   end
   def get_player_move(possible_moves)
     input = interface.prompt_move(moves: possible_moves)
-    if input != 'x'
+    if !input.nil? && input != 'x'
       self.state.current_turn.player_move = BlueApron::Moves.all[input].new
     else
       nil
