@@ -13,6 +13,7 @@ require 'blue_apron/moves/paper'
 require 'blue_apron/moves/scissors'
 
 require 'blue_apron/turn'
+require 'blue_apron/state'
 
 require 'blue_apron/strategy'
 require 'blue_apron/strategies'
